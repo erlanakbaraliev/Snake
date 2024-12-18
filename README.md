@@ -13,3 +13,4 @@ Technologies Used
 - Event Handling: To handle keyboard inputs and game actions.
 
 ![Screenshot 2024-12-18 212521](https://github.com/user-attachments/assets/e67f9e27-ba53-4c13-ba28-ba789e3e550a)
+![image](https://github.com/user-attachments/assets/9147ecd5-2260-497e-ae0c-12313d222ba2)
