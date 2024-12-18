@@ -14,7 +14,6 @@ public class GamePanel implements ActionListener {
     static final int SCREEN_WIDTH = 600;
     static final int SCREEN_HEIGHT = 600;
     static final int UNIT_SIZE = 25; //OBJECT SIZE
-    static final int GAME_UNITS = (SCREEN_WIDTH*SCREEN_HEIGHT)/UNIT_SIZE;
     static final int DELAY = 100; //higher, slower game
     final int x[] = new int[UNIT_SIZE*UNIT_SIZE];
     final int y[] = new int[UNIT_SIZE*UNIT_SIZE];
@@ -200,7 +199,7 @@ public class GamePanel implements ActionListener {
             throw new RuntimeException(e);
         }
     }
-    private void sortPeopleBasedOnScore() {
+    void sortPeopleBasedOnScore() {
         Collections.sort(people, new Comparator<Person>() {
             @Override
             public int compare(Person o1, Person o2) {

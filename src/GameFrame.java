@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class GameFrame {
-    private JFrame frame;
+    JFrame frame;
     private GamePanel gamePanel;
     private String dbURL;
     private String dbUser;
@@ -55,7 +55,7 @@ public class GameFrame {
         exitItem.addActionListener(e -> System.exit(0));
         gameMenu.add(exitItem);
     }
-    private void displayHighscores() {
+    void displayHighscores() {
         SwingUtilities.invokeLater(() -> {
             try {
                 ResultSet resultSet = gamePanel.getSelectResultSet();
@@ -83,5 +83,6 @@ public class GameFrame {
             }
         });
     }
+    public GamePanel getGamePanel() {return gamePanel;}
 
 }
